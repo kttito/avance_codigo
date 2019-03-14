@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es un documento HTML5" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>Este es el título</h1>
+        </div>
+    </header>
+    <nav id="menuicono">
+        <img src="./img/menu.png" width="35px" height="28" alt="" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="index.html">Fotos</a></li>
+                <li><a href="index.html">Videos</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <section id="articulosprincipales">
+                <article>
+                    <h1>Título Primer Artículo</h1>
+                    <time datetime="2016-12-23" pubdate>
+                        <div class="numerodia">23</div>
+                        <div class="nombredia">Viernes</div>
+                    </time>
+                    <p>Este es el texto del primer artículo</p>
+                    <figure>
+                        <img src="http://placehold.it/300x300" alt="">
+                    </figure>
+                </article>
+                <article>
+                    <h1>Título Segundo Artículo</h1>
+                    <time datetime="2016-12-7" pubdate>
+                        <div class="numerodia">7</div>
+                        <div class="nombredia">Miércoles</div>
+                    </time>
+                    <p>Este es el texto del segundo artículo</p>
+                    <figure>
+                        <img src="http://placehold.it/300x300" alt="">
+                    </figure>
+                </article>
+            </section>
+            <aside id="infoadicional">
+                <h1>Informaciñon personal</h1>
+                <p>Cita del artículo uno</p>
+                <p>Cita del artículo dos</p>
+            </aside>
+            <div class="recuperar"></div>
+        </div>
+    </main>
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio web</h1>
+                <p>
+                    <a href="index.html">Principal</a>
+                    <a href="fotos.html">Fotos</a>
+                    <a href="videos.html">Videos</a>
+                </p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p>
+                    <a href="contacto.html">Contacto</a>
+                </p>
+            </section>
+            <section class="seccionpie">
+                <address>Toronto, Canada</address>
+                <small>© copy; Derechos Reservados 2016</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+    <script>
+        var visible = false;
+            //guaradamos en una var al elemto nav > img()
+            //al elemento img que está dentro de nav
+            var menuimg = document.getElementById("menu-img");
+            //funcion que se ejecuta cuando ahacemos clic en la img
+            //del icono
+            menuimg.addEventListener("click" , function () {
+                var menuprincipal1 = document.getElementById("menuprincipal");
+                if(visible == false){
+                    menuprincipal.style.display = "block";
+                    visible = true;
+                }else{
+                    menuprincipal.style.display = "none";
+                    visible = false;
+                }
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    border: 1px solid tomato;
+}
+
+article img{
+    width: 100%;
+    /* max-width: 800px; */
+}
+
+/* @media(max-width:1024px){
+    .probarimg {
+        content:url("http://placehold.it/300x300/");
+    }
+}
+
+@media(max-width:500px){
+    .probarimg {
+        content:url("http://placehold.it/100x100/")
+    }
+} */
+/* ======= */
+#imagen1 {
+    background: url("http://placehold.it/300x300/");
+    width: 100px;
+    height: 100px;
+}
+#imagen2 {
+    background: url("http://placehold.it/300x300/");
+    width: 100px;
+    height: 100px;
+}
+
+@media(max-width:500px){
+    .probarimg {
+        background:url("http://placehold.it/100x100/")
+    }
+    imagen2{
+        background: url("http://placehold.it/100x100/");
+    }
+}

@@ -1,0 +1,43 @@
+header {
+    border: 1px solid rgb(0, 0, 0);
+    /* x y  difuminado | inset => sombra interna*/
+    /* box-shadow: rgb(123, 123, 123) 5px 5px 5px inset; */
+    box-shadow: rgb(123, 123, 123) 5px 5px 5px;
+    /* Gradiente */
+    /* las gradientes se van a incluir en el background linear-gradient*/
+    /* prefijo webkit => CHROME Y SAFARI */
+    /* prefijo moz => MOZILLA */
+    /* prefijo o => OPERAS */
+    /* background: -webkit-linear-gradient(top right, tomato, yellow); */
+    /* background: -webkit-linear-gradient(45deg, tomato, yellow, #443322, #c4c532); */
+    /* background: -webkit-linear-gradient(45deg, transparent 50%, tomato); */
+
+    /* gradient radial */
+    /* ELIPSE OR CIRCLE */
+    background: -webkit-radial-gradient(left, ellipse, transparent, tomato, violet)
+}
+
+body{
+    background-image: url(../Semana1/Dia5/img/textura.jpg)
+}
+h1 {
+    text-shadow: rgb(123, 123, 123) 5px 5px 20px;
+}
+
+/* flitros 'FILTER'*/
+/* BLUR => difuminado valores de 1px a 10px */
+/* grayscale => convierte los colres de una img s escala de grises valores 0.1 a 1 */
+/* invert => inivierte los colores y produce un negativo, valores de 0.1 a 1 */
+/* opacity => cambia la opacidad del elemento, valores de 0=transparente a 1=opaco */
+/* brightness => cambia el brillo de la img, valores 0.1 a 10 */
+section {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    /* background-image: url(../Semana1/Dia5/img/perro.jpg); */
+}
+
+section > img {
+    /* filter: blur(5px); */
+    filter: invert(0.3);
+}

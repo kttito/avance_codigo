@@ -1,0 +1,119 @@
+/* before => inyecta un elemnt antes del elemt selccionado */
+#contenido::before {
+    content: ">";
+    color: green;
+}
+
+#contenido::after {
+    content: "z";
+}
+
+header{
+    border: 1px solid red;
+    background-color: red;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    /* animation: [nombre_de_animacion] [tiempo] [funcion_bezier] [delay] [nro_veces_a_repetir | infinite] [sentido_de_ejecucion | normal | reverse] [forma_de_finalización | none]*/
+    animation-name:miAnimacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+/* @keyframes miAnimacion{
+    0%{
+        background-color: #ff4422;
+    }
+    50%{
+        background-color: #aa77ff;
+        transform: scale(0.1) rotate(360deg);
+    }
+    100%{
+        background-color: #000000;
+    }
+} */
+
+img{
+    width: 200px;
+    animation-name:miImagen;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; 
+}
+
+@keyframes miImagen{
+    0%{
+        transform: translate(0, 0) scale(0.5)
+        
+    }
+    25%{
+        transform: translate(500px, 0)
+    }
+    50%{
+        transform: translate(500px, 500px)
+    }
+    75%{
+        transform: translate(0, 500px)
+    }
+    100%{
+        transform: translate(0, 0)
+    }
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    /* background-color: tomato; */
+    animation-name:cuadradoColor;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: none; 
+}
+
+@keyframes cuadradoColor {
+    0%{
+        transform: translate(0, 0);
+        background-color: aquamarine;    
+    }
+    25%{
+        transform: translate(500px, 0);
+        background-color: tomato;
+    }
+    50%{
+        transform: translate(500px, 500px);
+        background-color: lightblue;
+    }
+    75%{
+        transform: translate(0, 500px);
+        background-color: rgb(243, 210, 26);
+    }
+    100%{
+        transform: translate(0, 0);
+        background-color:tomato;
+    }
+}
+
+html{
+    font-size: 16px;
+}
+
+#div1 {
+    /* 1.5 rem = 24px */
+    font-size: 1.5rem;
+}
+
+#parrafo {
+    /* 1.5 rem = 24px por herderar el tamaño relativo de sus padre directo*/
+    /* 1.5 em = 36px */
+    font-size: 1.5em;
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+body *{
+    border: 1px solid red;
+}
+/* Para arreglar ese detalle clear both */
+img{
+    float: right;
+}
+
+/* clear=> rellena los espacios a los costado de un elemento float */
+#clear {
+    clear: both;
+}
+
+.contenedor {
+    border: 1px solid blue;
+    background-color: rgb(162, 160, 160);
+}
+

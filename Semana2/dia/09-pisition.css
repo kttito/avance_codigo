@@ -1,0 +1,60 @@
+.cajapadre {
+    width: 100%;
+    border: 1px solid tomato;
+    margin-top: 200px;
+    position: relative;
+    /* si sus padres no está posicionado será el wi => relativa */
+}
+/* posición relativaa toma de su propio eleento */
+#caja-1 {
+    position: absolute;
+   /*  transform: translate(-50%, 0); */
+    left: 20px;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    float: left;
+    background-color: #ccc;
+    /* z-index establece el valor de profundiadad de un elemento */
+    z-index: 100;
+}
+
+#caja-2 {
+    position: relative;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    float: left;
+    background-color: lightgreen;
+    z-index: 150;
+}
+
+#caja-3 {
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    float: right;
+    background-color: #ccc;
+}
+
+#caja-4 {
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    float: right;
+    background-color: lightgreen;
+}
+
+.clear {
+    clear: both;
+}
+
+#fijar {
+    position: fixed;
+    /* right: 0; */
+    top: 0;
+    width: 100%;
+    border: 1px solid tomato;
+}
+
+/* box-sizing:border-box */
