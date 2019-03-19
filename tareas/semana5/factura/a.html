@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./a.js"></script>
+    <link rel="stylesheet" href="./a.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="form">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="" id="Nombre">
+            <label for="RUC">RUC</label>
+            <input type="text" name="" id="RUC"><br>
+            <label for="Date">Fecha</label>
+            <input type="date" name="" id="Date">
+        </div>
+        <div id="producto">
+            <input type="number" name="" id="Cant" min="1" placeholder="Cant">
+            <input type="text" name="" id="Descripcion" placeholder="Descripción">
+            <select name="" id="Categoria">
+                <option value="Ropa">Ropa</option>
+                <option value="Elec">Electrodomestico</option>
+                <option value="Comida">Comida</option>
+            </select>
+            <input type="number" name="" id="Punit" placeholder="P. unit" min="1">
+            <button id="botonI">Agregar</button>
+            <button id="botonF">Finalizar</button>
+        </div>
+        <div id="tabla">
+            <table id="tab" border="">
+                <thead>
+                    <tr>
+                        <td>N°</td>
+                        <td>Cant.</td>
+                        <td>Descripción</td>
+                        <td>P. Unit.</td>
+                        <td>Subtotal</td>   
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+
+                </tbody>
+                
+            </table>
+        </div>
+       
+    </main>
+</body>
+</html>
